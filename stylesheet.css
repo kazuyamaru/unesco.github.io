@@ -1,0 +1,439 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    text-size-adjust: 100%;
+    overflow-x: hidden;
+    color: rgb(0, 0, 0);
+    font: 300 14px / 1.9 "Noto Sans JP", Arial, Verdana, 游ゴシック, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    background: rgb(255, 255, 255);
+}
+
+.drawer-btn{
+	display: none;
+}
+
+header a{
+  text-decoration: none;
+  color: black;
+}
+
+header a:hover{
+  border-bottom:  1px solid #ccc;
+}
+
+header{
+  padding-top: 60px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+	.header-list2{
+		display: none;
+	}
+
+.header-logo{
+  text-align: center;
+  margin-bottom: 63px;
+}
+
+.header-logo img{
+  width: 142px;
+  height: 80px;
+}
+
+.header-logo i{
+	display: none;
+}
+
+.header-list{
+  width: 100%;
+}
+
+.gnav-list{
+  text-align: center;
+	margin: 40px 0;
+}
+
+.gnav-list li{
+  display: inline-block;
+  padding: 0 25px;
+}
+
+.mainvisual{
+ text-align: center;
+}
+
+.mainvisual img{
+  width: 1280px;
+  height: 530px;
+  position: absolute;
+	left: 50%;
+  margin-left: -640px;
+}
+
+#message{
+  margin-top: 600px;
+  width: 100%;
+}
+
+h1{
+  font-family: 'Pacifico', cursive;
+  font-size: 22px;
+  position: relative;
+  padding: 0 55px;
+  width: 50%;
+  margin: 0 20%;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 35%;
+  height: 1px;
+  background-color: black;
+}
+
+h1::before{
+  left: 0;
+}
+
+h1::after{
+  right: 0;
+}
+
+p{
+  width: 60%;
+  margin: 0 20%;
+  margin-bottom: 85px;
+}
+
+.photo {
+  width: 100%;
+}
+
+.photo ul{
+  display: flex;
+}
+
+.photo li{
+  width: 33.333333%;
+}
+
+.photo img{
+  width: 100%;
+  vertical-align: bottom;
+}
+
+#project{
+  width: 100%;
+  margin-top: 85px;
+}
+
+#project img{
+  width: 60%;
+	margin: 0 20%;
+  margin-bottom: 36px;
+}
+
+.subimg img{
+  width: 100%;
+}
+
+#brand {
+  margin-top: 90px;
+  display: inline-block;
+}
+
+#brand ul{
+  display: flex;
+}
+
+#brand .img{
+  width: 60%;
+	margin-bottom: 20px;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+#brand .img1{
+  width: 67%;
+	margin-bottom: 20px;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+#brand .sentence{
+	width: 60%;
+}
+
+#brand .sentence1{
+	width: 67%;
+}
+
+#brand img{
+  width: 60%;
+  padding-top: 30%;
+  padding-bottom: 30%;
+}
+
+.brand-visual{
+  text-align: center;
+  padding-top: 30%;
+  padding: 220px 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background: url(../camera/bgSec04.jpg) ;
+  background-position: center center;
+  background-attachment: fixed;
+  margin-bottom: 80px;
+}
+
+#company{
+	margin: 0 ;
+}
+
+#company .access{
+	display: flex;
+	margin: 0 20%;
+}
+
+#company .info{
+	padding: left: 0;
+}
+
+#company .info p{
+	width: 100%;
+	margin-left: 0;
+	margin-bottom: 40px;
+}
+
+#company .sns img{
+	padding: 0 6px;
+	width: 20px;
+	height: 20px;
+}
+
+#company .map {
+	position: relative;
+	margin-left: 70px;
+	width: 60%;
+	height: 0;
+	padding-bottom: 45%;
+	overflow: hidden;
+}
+
+#company iframe{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	}
+
+footer{
+	margin-top: 133px;
+	text-align: center;
+}
+
+footer h1{
+	clear: both;
+	font-size: 12px;
+}
+
+@media screen and (max-width:780px){
+
+	.gnav-list{
+		display: none;
+	}
+
+	.header-list2{
+		width: 100%;
+		height: 300px;
+		text-align: left;
+		display: block;
+		background-color: white;
+		transform: translateY(-4000%);
+		transition: 0.5s;
+	}
+
+	.gnav-list2 li{
+		padding: 15px 10px;
+		border-bottom: 1px solid black;
+	}
+
+	.drawer-btn{
+		display: block;
+		position: absolute;
+		right: 8px;
+		top: 20px;
+		transform: scale(1.5);
+		opacity: 0;
+		z-index: 999;
+	}
+
+	.drawer-btn:checked ~ .header-list2{
+		transform: translateY(-2%);
+	}
+
+	header{
+		height: 70px;
+		padding-top: 0;
+		padding-bottom: 0px;
+		z-index: 999;
+	}
+
+	header .header-logo img{
+		width: 83px;
+		height: 45px;
+		padding-top: 10px;
+	}
+
+	.header-logo{
+		position: fixed;
+		height: 70px;
+		width: 100%;
+		background-color: white;
+		z-index: 999;
+	}
+
+	.header-logo i{
+		display: block;
+		padding-right: 10px;
+		padding-top: 25px;
+		float: right;
+	}
+
+	h1{
+		margin: 0 15%;
+	}
+
+	p{
+	  width: 96%;
+	  margin: 0 2%;
+	  margin-bottom: 85px;
+	}
+
+	.photo ul{
+	  display: block;
+	}
+
+	.photo li{
+	  width: 100%;
+	}
+
+	#project{
+		text-align:left;
+
+	}
+
+	#project img{
+		width: 90%;
+		margin: 0 5%;
+	}
+
+	#brand ul{
+	  display: block;
+	}
+
+	#brand .img{
+	  width: 90%;
+		height: 165px;
+		margin: 0 5%;
+	}
+
+	#brand .img1{
+	  width: 92%;
+		margin: 0 5%;
+		height: 165px;
+	}
+
+	#brand .sentence{
+		width: 90%;
+		margin: 20px 5%;
+	}
+
+	#brand .sentence1{
+		width: 92%;
+		margin: 20px 5%;
+	}
+
+	#brand img{
+		width: 166px;
+		height: 107px;
+		padding-top: 5%;
+	}
+
+	.brand-visual{
+		padding: 100px 0;
+	}
+
+	#company .access{
+
+	}
+
+	#company .access{
+		display: block;
+		margin: 0 1%;
+	}
+
+	#company .map{
+		height: 270px;
+		width: 100%;
+		margin: 0 2%;
+		overflow: visible;
+	}
+
+	#company iframe{
+		width: 95%;
+	}
+
+	#company .info{
+		padding: 20px;
+	}
+
+	}
