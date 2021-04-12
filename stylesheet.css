@@ -111,8 +111,6 @@ header{
   height: 530px;
 	object-fit: cover;
   position: absolute;
-	/*left: 50%;
-  margin-left: -640px;*/
 }
 
 #message{
