@@ -1,0 +1,349 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #cccccc;
+  color: #333333;
+  font-size: 15px;
+  line-height: 2;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+}
+
+img {
+  vertical-align:bottom;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #3583aa;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  width: 960px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  margin-top: 50px;
+}
+
+.Logo {
+  font-size: 30px;
+  font-family: Impact;
+  color: #ffffff;
+}
+
+.global-nav {
+  float: right;
+  margin-top: 60px;
+}
+
+.global-nav li {
+  float: left;
+  margin: 0 20px;
+  font-size: 20px;
+  list-style: none;
+  font-family: 'Bitter', serif;
+}
+
+.global-nav li a {
+  color: #ffffff;
+}
+
+.global-nav li a:hover {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+#wrap {
+  clear: both;
+}
+
+.content {
+  width: 960px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+#index footer{
+  background-color: none;
+}
+
+footer small {
+  font-size: 12px;
+}
+
+/*上までがcommon*/
+
+#index h1{
+    font-size: 100px;
+    line-height: 1;
+    color: #ffffff;
+    font-family: 'Bitter',serif;
+    margin-bottom: 50px;
+    border-bottom: none;
+}
+#index .content{
+    margin-top: 150px;
+}
+#index p{
+    font-size: 16px;
+    color: #ffffff;
+}
+.btn a{
+    background-color: #009cd3;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Bitter',serif;
+    width: 185px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 3px solid #009cd3;
+}
+.btn a:hover{
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #009cd3;
+}
+#index footer{
+    width: 960px;
+    margin: 150px auto 0 auto;
+    text-align: left;
+}
+
+#index{
+    background-image: url(../images/index.images.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 999;
+}
+
+#index background-image::before {
+  content: '';
+  /* ↓暗いオーバーレイを半透明で配置 */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+#about{
+    background-image: url(../images/index.images.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+
+#wrap {
+    clear: both;
+    background-color: #ffffff;
+    margin-top: 220px;
+    padding: 35px 0;
+}
+
+.main-center{
+    width: 940px;
+    margin: 0 auto;
+}
+
+h1{
+    font-family: 'Bitter',serif;
+    font-size: 36px;
+    border-bottom: 1px solid #cccccc;
+}
+
+h2{
+    font-family: 'Bitter',serif;
+    font-size: 24px;
+}
+
+.icon:before{
+    content: "";
+    padding-right: 10px;
+    border-left: 7px solid #9cb4a4;
+}
+
+#about .profile-txt{
+    width: 540px;
+    float: left;
+}
+
+#about .profile-txt span{
+    font-weight: bold;
+}
+
+#about .profile-image{
+    width: 300px;
+    float: right;
+}
+
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section{
+    margin-bottom: 35px;
+}
+
+#about .career th{
+    width: 240px;
+    background-color: #f0f0f0;
+    padding: 12px 0;
+    border: 1px solid #cccccc;
+}
+
+#about .career td{
+    width: 660px;
+    padding: 12px 0 12px 40px;
+    border: 1px solid #cccccc;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+footer{
+    text-align: center;
+    color: #ffffff;
+    padding: 20px 0;
+    background-color:#767671;
+}
+
+#portfolio{
+    background-image: url(../images/index.images.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+
+.main{
+    width: 940px;
+    margin: 0 10px;
+    float: left;
+}
+
+#portfolio .image{
+  width: 100%;
+}
+
+.image img{
+  width: 100%
+}
+
+a img:hover{
+    opacity: 0.8;
+}
+
+#contact{
+   background-image: url(../images/bg-contact.jpg);
+   background-repeat: no-repeat;
+   background-position: center top;
+   background-attachment: fixed;
+   background-size: 100% auto;
+}
+
+
+
+
+@media screen and (max-width:600px){
+    /*画面サイズが600px以下の場合に適用*/
+
+    body{
+    font-size: 3.5vw;
+}
+    h1{
+    font-size: 7.2vw;
+    }
+
+    h2{
+        font-size: 6vw;
+    }
+
+    header{
+        width: auto;
+        margin: 0 5%;
+    }
+
+    .logo{
+        float: none;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .global-nav{
+        float: none;
+        margin-top: 40px;
+        text-align: center;
+
+    }
+
+    .global-nav li{
+        display: inline;
+        float: none;
+        margin: 0 8px;
+    }
+
+    #wrap{
+        margin-top: 40px;
+        padding: 35px 0 0;
+    }
+
+    .contents{
+        width: 100%;
+    }
+
+    .main{
+        float: none;
+        width: auto;
+        margin: 0 5%;
+    }
+
+    h2 img{
+        max-width: 100%;
+    }
+
+    #prtfolio{
+        background-image: url(../images/bg-portfolio-sp.jpg);
+    }
+
+    .sidebar{
+        width: auto;
+        float: none;
+        margin: 0;
+        padding: 30px 10% 10px;
+        background-color: #f7f6f4;
+    }
+}
